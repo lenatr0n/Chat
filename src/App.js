@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="header">
         <img src={coolpic} className="logo" alt="logo" />
-        chat
+              chat
       </header>
       <TextInput/>
     </div>
