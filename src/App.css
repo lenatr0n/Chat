@@ -32,18 +32,18 @@
   align-items: center;
   border-top:1px solid white;
 }
-.text-input input {
+.text-input > input {
   position:absolute;
   width:calc(100% - 10px);
   height:90%;
   font-size: 24px;
   border-radius:15px;
   border:1px solid white;
-  background:black;
-  color:white;
+  background:white;
+  color:black;
 }
 
-.text-input button {
+.text-input > button {
   position:absolute;
   right:12px;
   width: 32px;
@@ -52,7 +52,106 @@
   border-radius:15px;
   border:1px solid white;
 }
-.text-input button:hover {
+.text-input > button:hover {
 background:teal;
 color:white;
+}
+
+.text-input > button[disabled] {
+  color:white;
+  background:grey;
+  cursor: default;
+}
+
+.messages{
+  overflow:auto;
+  height:calc(100% - 110px);
+}
+
+.bubble-wrap{
+  width:100%;
+  padding:8px 20px;
+  display:flex;
+  position: relative;
+}
+
+.bubble-wrap[from="me"] {
+  flex-direction:row-reverse;
+}
+
+.bubble{
+  border-radius:11px;
+  padding: 8px 12px;
+  font-size: 14px;
+  position:relative;
+  border: 1px solid #606060;
+  margin-left:5px;
+}
+.bubble:before{
+  content:"";
+  width:12px;
+  height:12px;
+  transform:rotate(45deg);
+  background:white;
+  border: 1px solid #606060;
+  position:absolute;
+  left:-6px;
+  top:10px
+}
+.bubble-wrap[from="me"] .bubble:before{
+  left:auto;
+  right:-6px;
+}
+.bubble:after{
+  content:"";
+  background:white;
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  border-radius:10px;
+}
+.bubble > span {
+  color:black;
+  position:relative;
+  z-index:101;
+}
+.bubble-name{
+  position: absolute;
+  color:white;
+  top: -5px;
+  font-size:10px;
+  left: 30px;
+}
+
+.edit-username{
+  display: flex;
+  align-items: center;
+}
+.name-button{
+  height:29px;
+  margin:0 6px;
+  background:transparent;
+  border:1px solid white;
+  color:white;
+  font-size:10px;
+  padding:7px;
+  cursor: pointer;
+}
+.name-button:hover{
+  background:rgba(255,255,255,0.1)
+}
+.name-input{
+  color:white;
+  height:31px;
+  border:1px solid white;
+  border-radius:14px;
+  padding-left:12px;
+  background:white;
+  padding-bottom:2px;
+  font-size:12px;
+}
+.username{
+  display: flex;
+  align-items: center;
+  margin-right:12px;
+  font-size:16px;
 }
