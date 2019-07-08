@@ -12,11 +12,15 @@
   text-align: center;
 }
 .header{
-  font-size:32px;
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  flex-direction:row;
+  font-size:28px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background: rgba(255, 255, 255, .2);
   color:white;
-  padding: 10px 25px;
+  padding: 10px 20px;
   text-align: left;
   border-bottom: 2px solid white;
 }
@@ -35,7 +39,7 @@
 .text-input > input {
   position:absolute;
   width:calc(100% - 10px);
-  height:90%;
+  height:92%;
   font-size: 24px;
   border-radius:15px;
   border:1px solid white;
@@ -65,12 +69,12 @@ color:white;
 
 .messages{
   overflow:auto;
-  height:calc(100% - 110px);
+  height:calc(100% - 120px);
 }
 
 .bubble-wrap{
   width:100%;
-  padding:8px 20px;
+  padding:15px 20px;
   display:flex;
   position: relative;
 }
@@ -117,7 +121,7 @@ color:white;
 .bubble-name{
   position: absolute;
   color:white;
-  top: -5px;
+  top: 2px;
   font-size:10px;
   left: 30px;
 }
@@ -140,7 +144,7 @@ color:white;
   background:rgba(255,255,255,0.1)
 }
 .name-input{
-  color:white;
+  color:black;
   height:31px;
   border:1px solid white;
   border-radius:14px;
