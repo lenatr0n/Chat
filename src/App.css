@@ -38,7 +38,8 @@
 }
 .text-input > input {
   position:absolute;
-  width:calc(100% - 10px);
+  width:calc(100% - 100px);
+  left:50px;
   height:92%;
   font-size: 24px;
   border-radius:15px;
@@ -68,13 +69,16 @@ color:white;
 }
 
 .messages{
+  display:flex;
   overflow:auto;
   height:calc(100% - 120px);
+  padding-top:10px;
+  flex-direction: column-reverse;
 }
 
 .bubble-wrap{
   width:100%;
-  padding:15px 20px;
+  padding:10px 20px;
   display:flex;
   position: relative;
 }
@@ -121,7 +125,7 @@ color:white;
 .bubble-name{
   position: absolute;
   color:white;
-  top: 2px;
+  top: -3px;
   font-size:10px;
   left: 30px;
 }
