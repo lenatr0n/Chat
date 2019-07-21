@@ -16,7 +16,7 @@
   align-items: center;
   justify-content:space-between;
   flex-direction:row;
-  font-size:28px;
+  font-size:3rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background: rgba(255, 255, 255, .2);
   color:white;
@@ -26,6 +26,7 @@
 }
 .logo{
   height:40px; 
+  margin-right: 1.5rem;
 }
 .text-input{
   position:absolute;
@@ -122,6 +123,13 @@ color:white;
   position:relative;
   z-index:101;
 }
+
+
+.bubble img {
+  position: relative;
+  z-index: 101;
+
+}
 .bubble-name{
   position: absolute;
   color:white;
@@ -161,5 +169,5 @@ color:white;
   display: flex;
   align-items: center;
   margin-right:12px;
-  font-size:16px;
+  font-size:1.1rem;
 }
